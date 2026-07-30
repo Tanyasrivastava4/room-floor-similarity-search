@@ -1,6 +1,5 @@
 """
 test_segment.py
-----------------
 Runs floor segmentation on all query images and saves a green-overlay
 visualization for each, so we can visually confirm the mask is only
 covering the floor - not furniture/rugs/walls.
