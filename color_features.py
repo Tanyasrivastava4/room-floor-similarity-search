@@ -1,6 +1,5 @@
 """
 color_features.py
--------------------
 HSV color histogram - the classical, no-download-required half of
 our hybrid similarity signal. Complements CLIP by giving an explicit,
 interpretable measure of color palette (light oak vs dark walnut vs
@@ -71,7 +70,7 @@ def get_query_histogram(image_path: str) -> tuple[np.ndarray, str]:
 
 
 if __name__ == "__main__":
-    print("--- Sanity test: product 1 vs query 1 (floor-only, color only) ---")
+    print(" Sanity test: product 1 vs query 1 (floor-only, color only) ")
     product_hist = get_product_histogram("data/sku/1.jpg")
     query_hist, method = get_query_histogram("data/query/1.jpg")
 
