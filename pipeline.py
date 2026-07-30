@@ -1,6 +1,5 @@
 """
 pipeline.py
-------------
 Full ranking pipeline: for each of the 5 query images, ranks all 20
 product images by combined floor similarity.
 
