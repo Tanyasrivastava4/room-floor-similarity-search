@@ -1,6 +1,5 @@
 """
 visualize_results.py
-----------------------
 Builds one image per query: the query room photo on the left, and its
 top-5 ranked product thumbnails on the right with similarity scores
 labeled. This is the human-checkable evidence for the assessment -
