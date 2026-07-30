@@ -1,6 +1,5 @@
 """
 clip_features.py
------------------
 Extracts CLIP image embeddings for:
   - product images (used as-is, they're already floor-only)
   - query images (first passed through segment.extract_floor() to
@@ -74,56 +73,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-
-
-
-
-
-#"""
-#clip_features.py
-#-----------------
-#Extracts CLIP image embeddings for real product/query images using
-#the HuggingFace CLIP model + its matching preprocessor (CLIPProcessor
-#handles resizing, normalization, etc. exactly as CLIP expects).
-#"""
-#
-#from transformers import CLIPModel, CLIPProcessor
-#from PIL import Image
-#import torch
-#
-#_MODEL_NAME = "openai/clip-vit-base-patch32"
-#
-#print("Loading CLIP model + processor...")
-#model = CLIPModel.from_pretrained(_MODEL_NAME)
-#processor = CLIPProcessor.from_pretrained(_MODEL_NAME)
-#model.eval()
-#print("Ready.")
-#
-#
-#def get_clip_embedding(image_path: str) -> torch.Tensor:
-#    """Returns a 512-dim CLIP embedding vector for a single image."""
-#    image = Image.open(image_path).convert("RGB")
-#    inputs = processor(images=image, return_tensors="pt")
-#
-#    with torch.no_grad():
-#        outputs = model.get_image_features(**inputs)
-#        embedding = outputs.pooler_output  # (1, 512), already the final CLIP embedding
-#
-#    return embedding.squeeze(0)  # -> shape (512,)
-#
-#
-#if __name__ == "__main__":
-#    import torch.nn.functional as F
-#
-#    # quick sanity test: one product image vs one query image
-#    product_emb = get_clip_embedding("data/sku/1.jpg")
-#    query_emb = get_clip_embedding("data/query/1.jpg")
-#
-#    print("Product embedding shape:", product_emb.shape)
-#    print("Query embedding shape:", query_emb.shape)
-#
-#    similarity = F.cosine_similarity(product_emb.unsqueeze(0), query_emb.unsqueeze(0))
-#    print("Cosine similarity (product 1 vs query 1):", similarity.item())
