@@ -18,6 +18,12 @@ The core insight driving the whole design: **comparing a full room photo directl
 
 Everything else in the pipeline follows from that.
 
+**Assumptions made:**
+- Only the floor's visual properties (color, texture, grain, pattern) matter for similarity — not the room's furniture, lighting fixtures, or overall style.
+- No ground-truth relevance labels are available (which product is the "correct" match for which query), so evaluation is qualitative/visual, not a quantitative metric like NDCG or precision@k.
+- Products and queries are all wood/wood-look flooring (no carpet, tile, or stone), so texture-based methods are appropriate.
+
+---
 
 ## Pipeline Overview
 
@@ -114,6 +120,36 @@ Full per-query rankings (all 20 products, not just top 5) are in `outputs/result
 
 ---
 
+## Limitations & Discovered Issues
+
+### 1. Centroid bias in the color signal
+While reviewing results, products 2 and 11 kept appearing in the top-5 across multiple, visually different queries. Investigation showed:
+- **Product 2's average Hue/Saturation sits almost exactly at the dataset's mean color** — it scores moderately-high against nearly *any* query simply because its color is "generically average" for this catalog, not because it's a genuinely strong match in every case.
+- **Product 11**, in contrast, is a CLIP embedding *outlier* (furthest from the mean embedding of all 20 products), likely due to unusually distinctive, high-contrast grain — suggesting CLIP's texture representation can overweight visual distinctiveness in a way that doesn't always track true material similarity.
+
+A tested fix (normalizing each product's score against its own baseline similarity to all other products) reduced this bias but introduced a new one — amplifying products with low similarity-variance. It was not adopted, since it traded one bias for another rather than clearly improving results. A more robust fix would likely require a larger, more diverse product catalog (which naturally reduces centroid effects) or percentile-based rather than z-score-based normalization.
+
+### 2. Segmentation quality varies with camera angle
+Query 3's floor is photographed at a steep angle with strong directional lighting; this is the run's weakest result, and foreshortened planks + a lighting gradient across the floor likely affected both the segmentation boundary and the color histogram's reliability.
+
+### 3. No ground-truth evaluation
+Without labeled relevance judgments, all evaluation here is qualitative (visual inspection of the grids). A real deployment would benefit from human-labeled relevance pairs to compute NDCG/precision@k and to properly tune the 0.7/0.3 weighting instead of using a heuristic default.
+
+### 4. Environment constraint on model availability
+CLIP and SegFormer weights are downloaded from Hugging Face Hub at runtime. In network-restricted environments (e.g. sandboxed CI, air-gapped systems) this download can fail — hence the GrabCut/bottom-crop fallback chain for segmentation. No equivalent classical fallback exists for CLIP itself in this version.
+
+---
+
+## Possible Improvements
+
+- Replace CLIP with a model fine-tuned on materials/textures specifically, which might better disentangle "distinctive" from "similar."
+- Add a classical texture fallback (LBP/GLCM) for the CLIP signal itself, mirroring the segmentation fallback chain, for full offline robustness.
+- Percentile-based score normalization instead of raw cosine/histogram scores, to reduce catalog-composition bias.
+- Learn the CLIP/color weighting (instead of the fixed 0.7/0.3 heuristic) via a small labeled validation set.
+- Precompute and cache product embeddings to disk for scale (thousands of SKUs) rather than recomputing per run.
+- Try higher-resolution SegFormer variants (b0 was used here for speed; b2/b5 offer more accurate masks at higher compute cost).
+
+---
 
 ## How to Run
 
