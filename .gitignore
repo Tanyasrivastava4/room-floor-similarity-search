@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+__pycache__/
+
+# Python bytecode
+*.pyc
+
+# Model download caches (Hugging Face / torch) - can appear if models
+# get cached inside the project folder instead of the global cache
+.cache/
+*.pt
+*.bin
+*.safetensors
+
+# OS/editor junk
+.DS_Store
+.vscode/settings.json
+
+# Environment variables (if you ever add API keys/secrets)
+.env

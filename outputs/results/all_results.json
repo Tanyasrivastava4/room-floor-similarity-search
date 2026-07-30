@@ -1,0 +1,727 @@
+{
+  "query_1": {
+    "segmentation_method": "segformer",
+    "ranking": [
+      {
+        "product_id": 9,
+        "clip_similarity": 0.9402,
+        "color_similarity": 0.9516,
+        "final_score": 0.9436,
+        "rank": 1
+      },
+      {
+        "product_id": 8,
+        "clip_similarity": 0.9288,
+        "color_similarity": 0.9224,
+        "final_score": 0.9269,
+        "rank": 2
+      },
+      {
+        "product_id": 13,
+        "clip_similarity": 0.9401,
+        "color_similarity": 0.8113,
+        "final_score": 0.9014,
+        "rank": 3
+      },
+      {
+        "product_id": 19,
+        "clip_similarity": 0.9119,
+        "color_similarity": 0.8436,
+        "final_score": 0.8914,
+        "rank": 4
+      },
+      {
+        "product_id": 7,
+        "clip_similarity": 0.9167,
+        "color_similarity": 0.8155,
+        "final_score": 0.8864,
+        "rank": 5
+      },
+      {
+        "product_id": 6,
+        "clip_similarity": 0.9371,
+        "color_similarity": 0.7104,
+        "final_score": 0.8691,
+        "rank": 6
+      },
+      {
+        "product_id": 2,
+        "clip_similarity": 0.9296,
+        "color_similarity": 0.5882,
+        "final_score": 0.8272,
+        "rank": 7
+      },
+      {
+        "product_id": 11,
+        "clip_similarity": 0.8989,
+        "color_similarity": 0.6391,
+        "final_score": 0.8209,
+        "rank": 8
+      },
+      {
+        "product_id": 14,
+        "clip_similarity": 0.9387,
+        "color_similarity": 0.4992,
+        "final_score": 0.8068,
+        "rank": 9
+      },
+      {
+        "product_id": 4,
+        "clip_similarity": 0.9348,
+        "color_similarity": 0.5026,
+        "final_score": 0.8051,
+        "rank": 10
+      },
+      {
+        "product_id": 3,
+        "clip_similarity": 0.9146,
+        "color_similarity": 0.5433,
+        "final_score": 0.8032,
+        "rank": 11
+      },
+      {
+        "product_id": 16,
+        "clip_similarity": 0.9246,
+        "color_similarity": 0.5095,
+        "final_score": 0.8001,
+        "rank": 12
+      },
+      {
+        "product_id": 10,
+        "clip_similarity": 0.9259,
+        "color_similarity": 0.5055,
+        "final_score": 0.7998,
+        "rank": 13
+      },
+      {
+        "product_id": 18,
+        "clip_similarity": 0.907,
+        "color_similarity": 0.5395,
+        "final_score": 0.7968,
+        "rank": 14
+      },
+      {
+        "product_id": 1,
+        "clip_similarity": 0.9218,
+        "color_similarity": 0.5011,
+        "final_score": 0.7956,
+        "rank": 15
+      },
+      {
+        "product_id": 5,
+        "clip_similarity": 0.9031,
+        "color_similarity": 0.5346,
+        "final_score": 0.7926,
+        "rank": 16
+      },
+      {
+        "product_id": 17,
+        "clip_similarity": 0.9161,
+        "color_similarity": 0.4997,
+        "final_score": 0.7912,
+        "rank": 17
+      },
+      {
+        "product_id": 15,
+        "clip_similarity": 0.9124,
+        "color_similarity": 0.5028,
+        "final_score": 0.7895,
+        "rank": 18
+      },
+      {
+        "product_id": 12,
+        "clip_similarity": 0.9074,
+        "color_similarity": 0.4991,
+        "final_score": 0.7849,
+        "rank": 19
+      },
+      {
+        "product_id": 20,
+        "clip_similarity": 0.886,
+        "color_similarity": 0.5029,
+        "final_score": 0.771,
+        "rank": 20
+      }
+    ]
+  },
+  "query_2": {
+    "segmentation_method": "segformer",
+    "ranking": [
+      {
+        "product_id": 7,
+        "clip_similarity": 0.8497,
+        "color_similarity": 0.9414,
+        "final_score": 0.8772,
+        "rank": 1
+      },
+      {
+        "product_id": 6,
+        "clip_similarity": 0.8148,
+        "color_similarity": 0.9181,
+        "final_score": 0.8458,
+        "rank": 2
+      },
+      {
+        "product_id": 8,
+        "clip_similarity": 0.8389,
+        "color_similarity": 0.8314,
+        "final_score": 0.8366,
+        "rank": 3
+      },
+      {
+        "product_id": 2,
+        "clip_similarity": 0.7995,
+        "color_similarity": 0.9181,
+        "final_score": 0.8351,
+        "rank": 4
+      },
+      {
+        "product_id": 18,
+        "clip_similarity": 0.8186,
+        "color_similarity": 0.857,
+        "final_score": 0.8301,
+        "rank": 5
+      },
+      {
+        "product_id": 19,
+        "clip_similarity": 0.7851,
+        "color_similarity": 0.847,
+        "final_score": 0.8037,
+        "rank": 6
+      },
+      {
+        "product_id": 11,
+        "clip_similarity": 0.8371,
+        "color_similarity": 0.7191,
+        "final_score": 0.8017,
+        "rank": 7
+      },
+      {
+        "product_id": 9,
+        "clip_similarity": 0.8621,
+        "color_similarity": 0.6353,
+        "final_score": 0.7941,
+        "rank": 8
+      },
+      {
+        "product_id": 5,
+        "clip_similarity": 0.8161,
+        "color_similarity": 0.7014,
+        "final_score": 0.7817,
+        "rank": 9
+      },
+      {
+        "product_id": 13,
+        "clip_similarity": 0.8497,
+        "color_similarity": 0.622,
+        "final_score": 0.7814,
+        "rank": 10
+      },
+      {
+        "product_id": 3,
+        "clip_similarity": 0.852,
+        "color_similarity": 0.5982,
+        "final_score": 0.7759,
+        "rank": 11
+      },
+      {
+        "product_id": 10,
+        "clip_similarity": 0.85,
+        "color_similarity": 0.5973,
+        "final_score": 0.7742,
+        "rank": 12
+      },
+      {
+        "product_id": 15,
+        "clip_similarity": 0.8497,
+        "color_similarity": 0.5516,
+        "final_score": 0.7603,
+        "rank": 13
+      },
+      {
+        "product_id": 4,
+        "clip_similarity": 0.8134,
+        "color_similarity": 0.6225,
+        "final_score": 0.7561,
+        "rank": 14
+      },
+      {
+        "product_id": 12,
+        "clip_similarity": 0.8372,
+        "color_similarity": 0.5211,
+        "final_score": 0.7424,
+        "rank": 15
+      },
+      {
+        "product_id": 20,
+        "clip_similarity": 0.8103,
+        "color_similarity": 0.5704,
+        "final_score": 0.7384,
+        "rank": 16
+      },
+      {
+        "product_id": 1,
+        "clip_similarity": 0.797,
+        "color_similarity": 0.594,
+        "final_score": 0.7361,
+        "rank": 17
+      },
+      {
+        "product_id": 14,
+        "clip_similarity": 0.8163,
+        "color_similarity": 0.5485,
+        "final_score": 0.736,
+        "rank": 18
+      },
+      {
+        "product_id": 17,
+        "clip_similarity": 0.801,
+        "color_similarity": 0.5678,
+        "final_score": 0.7311,
+        "rank": 19
+      },
+      {
+        "product_id": 16,
+        "clip_similarity": 0.8111,
+        "color_similarity": 0.5208,
+        "final_score": 0.724,
+        "rank": 20
+      }
+    ]
+  },
+  "query_3": {
+    "segmentation_method": "segformer",
+    "ranking": [
+      {
+        "product_id": 2,
+        "clip_similarity": 0.8948,
+        "color_similarity": 0.903,
+        "final_score": 0.8973,
+        "rank": 1
+      },
+      {
+        "product_id": 11,
+        "clip_similarity": 0.8768,
+        "color_similarity": 0.8302,
+        "final_score": 0.8628,
+        "rank": 2
+      },
+      {
+        "product_id": 18,
+        "clip_similarity": 0.8693,
+        "color_similarity": 0.84,
+        "final_score": 0.8605,
+        "rank": 3
+      },
+      {
+        "product_id": 7,
+        "clip_similarity": 0.8805,
+        "color_similarity": 0.7467,
+        "final_score": 0.8404,
+        "rank": 4
+      },
+      {
+        "product_id": 5,
+        "clip_similarity": 0.8493,
+        "color_similarity": 0.8195,
+        "final_score": 0.8403,
+        "rank": 5
+      },
+      {
+        "product_id": 6,
+        "clip_similarity": 0.9042,
+        "color_similarity": 0.685,
+        "final_score": 0.8385,
+        "rank": 6
+      },
+      {
+        "product_id": 8,
+        "clip_similarity": 0.8958,
+        "color_similarity": 0.6314,
+        "final_score": 0.8165,
+        "rank": 7
+      },
+      {
+        "product_id": 3,
+        "clip_similarity": 0.8746,
+        "color_similarity": 0.6646,
+        "final_score": 0.8116,
+        "rank": 8
+      },
+      {
+        "product_id": 13,
+        "clip_similarity": 0.8952,
+        "color_similarity": 0.5864,
+        "final_score": 0.8025,
+        "rank": 9
+      },
+      {
+        "product_id": 10,
+        "clip_similarity": 0.8869,
+        "color_similarity": 0.6044,
+        "final_score": 0.8021,
+        "rank": 10
+      },
+      {
+        "product_id": 4,
+        "clip_similarity": 0.8986,
+        "color_similarity": 0.5614,
+        "final_score": 0.7975,
+        "rank": 11
+      },
+      {
+        "product_id": 19,
+        "clip_similarity": 0.8827,
+        "color_similarity": 0.5815,
+        "final_score": 0.7923,
+        "rank": 12
+      },
+      {
+        "product_id": 9,
+        "clip_similarity": 0.8948,
+        "color_similarity": 0.5426,
+        "final_score": 0.7891,
+        "rank": 13
+      },
+      {
+        "product_id": 14,
+        "clip_similarity": 0.9107,
+        "color_similarity": 0.5003,
+        "final_score": 0.7876,
+        "rank": 14
+      },
+      {
+        "product_id": 1,
+        "clip_similarity": 0.8875,
+        "color_similarity": 0.5421,
+        "final_score": 0.7839,
+        "rank": 15
+      },
+      {
+        "product_id": 16,
+        "clip_similarity": 0.8899,
+        "color_similarity": 0.503,
+        "final_score": 0.7739,
+        "rank": 16
+      },
+      {
+        "product_id": 17,
+        "clip_similarity": 0.8809,
+        "color_similarity": 0.4984,
+        "final_score": 0.7661,
+        "rank": 17
+      },
+      {
+        "product_id": 15,
+        "clip_similarity": 0.8719,
+        "color_similarity": 0.5077,
+        "final_score": 0.7627,
+        "rank": 18
+      },
+      {
+        "product_id": 12,
+        "clip_similarity": 0.8721,
+        "color_similarity": 0.4979,
+        "final_score": 0.7599,
+        "rank": 19
+      },
+      {
+        "product_id": 20,
+        "clip_similarity": 0.8542,
+        "color_similarity": 0.51,
+        "final_score": 0.7509,
+        "rank": 20
+      }
+    ]
+  },
+  "query_4": {
+    "segmentation_method": "segformer",
+    "ranking": [
+      {
+        "product_id": 16,
+        "clip_similarity": 0.8946,
+        "color_similarity": 0.9637,
+        "final_score": 0.9153,
+        "rank": 1
+      },
+      {
+        "product_id": 10,
+        "clip_similarity": 0.902,
+        "color_similarity": 0.7539,
+        "final_score": 0.8576,
+        "rank": 2
+      },
+      {
+        "product_id": 2,
+        "clip_similarity": 0.8865,
+        "color_similarity": 0.6379,
+        "final_score": 0.8119,
+        "rank": 3
+      },
+      {
+        "product_id": 13,
+        "clip_similarity": 0.9083,
+        "color_similarity": 0.4975,
+        "final_score": 0.7851,
+        "rank": 4
+      },
+      {
+        "product_id": 4,
+        "clip_similarity": 0.9003,
+        "color_similarity": 0.5079,
+        "final_score": 0.7826,
+        "rank": 5
+      },
+      {
+        "product_id": 14,
+        "clip_similarity": 0.8992,
+        "color_similarity": 0.4987,
+        "final_score": 0.779,
+        "rank": 6
+      },
+      {
+        "product_id": 15,
+        "clip_similarity": 0.8753,
+        "color_similarity": 0.5521,
+        "final_score": 0.7783,
+        "rank": 7
+      },
+      {
+        "product_id": 6,
+        "clip_similarity": 0.8966,
+        "color_similarity": 0.5008,
+        "final_score": 0.7779,
+        "rank": 8
+      },
+      {
+        "product_id": 8,
+        "clip_similarity": 0.8964,
+        "color_similarity": 0.5016,
+        "final_score": 0.7779,
+        "rank": 9
+      },
+      {
+        "product_id": 9,
+        "clip_similarity": 0.8936,
+        "color_similarity": 0.4986,
+        "final_score": 0.7751,
+        "rank": 10
+      },
+      {
+        "product_id": 7,
+        "clip_similarity": 0.883,
+        "color_similarity": 0.5157,
+        "final_score": 0.7728,
+        "rank": 11
+      },
+      {
+        "product_id": 18,
+        "clip_similarity": 0.8779,
+        "color_similarity": 0.5051,
+        "final_score": 0.7661,
+        "rank": 12
+      },
+      {
+        "product_id": 19,
+        "clip_similarity": 0.8752,
+        "color_similarity": 0.5001,
+        "final_score": 0.7627,
+        "rank": 13
+      },
+      {
+        "product_id": 17,
+        "clip_similarity": 0.8743,
+        "color_similarity": 0.4994,
+        "final_score": 0.7619,
+        "rank": 14
+      },
+      {
+        "product_id": 3,
+        "clip_similarity": 0.8743,
+        "color_similarity": 0.497,
+        "final_score": 0.7611,
+        "rank": 15
+      },
+      {
+        "product_id": 12,
+        "clip_similarity": 0.872,
+        "color_similarity": 0.4993,
+        "final_score": 0.7602,
+        "rank": 16
+      },
+      {
+        "product_id": 1,
+        "clip_similarity": 0.8712,
+        "color_similarity": 0.4992,
+        "final_score": 0.7596,
+        "rank": 17
+      },
+      {
+        "product_id": 20,
+        "clip_similarity": 0.8597,
+        "color_similarity": 0.5119,
+        "final_score": 0.7554,
+        "rank": 18
+      },
+      {
+        "product_id": 5,
+        "clip_similarity": 0.8645,
+        "color_similarity": 0.4994,
+        "final_score": 0.7549,
+        "rank": 19
+      },
+      {
+        "product_id": 11,
+        "clip_similarity": 0.857,
+        "color_similarity": 0.499,
+        "final_score": 0.7496,
+        "rank": 20
+      }
+    ]
+  },
+  "query_5": {
+    "segmentation_method": "segformer",
+    "ranking": [
+      {
+        "product_id": 11,
+        "clip_similarity": 0.8751,
+        "color_similarity": 0.9346,
+        "final_score": 0.893,
+        "rank": 1
+      },
+      {
+        "product_id": 5,
+        "clip_similarity": 0.8572,
+        "color_similarity": 0.9218,
+        "final_score": 0.8766,
+        "rank": 2
+      },
+      {
+        "product_id": 2,
+        "clip_similarity": 0.8873,
+        "color_similarity": 0.8124,
+        "final_score": 0.8648,
+        "rank": 3
+      },
+      {
+        "product_id": 6,
+        "clip_similarity": 0.9092,
+        "color_similarity": 0.6577,
+        "final_score": 0.8338,
+        "rank": 4
+      },
+      {
+        "product_id": 7,
+        "clip_similarity": 0.903,
+        "color_similarity": 0.6719,
+        "final_score": 0.8337,
+        "rank": 5
+      },
+      {
+        "product_id": 18,
+        "clip_similarity": 0.8807,
+        "color_similarity": 0.7114,
+        "final_score": 0.8299,
+        "rank": 6
+      },
+      {
+        "product_id": 8,
+        "clip_similarity": 0.9027,
+        "color_similarity": 0.5804,
+        "final_score": 0.806,
+        "rank": 7
+      },
+      {
+        "product_id": 10,
+        "clip_similarity": 0.9149,
+        "color_similarity": 0.5482,
+        "final_score": 0.8049,
+        "rank": 8
+      },
+      {
+        "product_id": 13,
+        "clip_similarity": 0.9233,
+        "color_similarity": 0.5103,
+        "final_score": 0.7994,
+        "rank": 9
+      },
+      {
+        "product_id": 9,
+        "clip_similarity": 0.924,
+        "color_similarity": 0.5052,
+        "final_score": 0.7983,
+        "rank": 10
+      },
+      {
+        "product_id": 14,
+        "clip_similarity": 0.9192,
+        "color_similarity": 0.4989,
+        "final_score": 0.7931,
+        "rank": 11
+      },
+      {
+        "product_id": 4,
+        "clip_similarity": 0.9046,
+        "color_similarity": 0.5306,
+        "final_score": 0.7924,
+        "rank": 12
+      },
+      {
+        "product_id": 19,
+        "clip_similarity": 0.8848,
+        "color_similarity": 0.5651,
+        "final_score": 0.7889,
+        "rank": 13
+      },
+      {
+        "product_id": 3,
+        "clip_similarity": 0.8929,
+        "color_similarity": 0.5436,
+        "final_score": 0.7881,
+        "rank": 14
+      },
+      {
+        "product_id": 1,
+        "clip_similarity": 0.8998,
+        "color_similarity": 0.523,
+        "final_score": 0.7868,
+        "rank": 15
+      },
+      {
+        "product_id": 15,
+        "clip_similarity": 0.9084,
+        "color_similarity": 0.5031,
+        "final_score": 0.7868,
+        "rank": 16
+      },
+      {
+        "product_id": 12,
+        "clip_similarity": 0.9014,
+        "color_similarity": 0.4984,
+        "final_score": 0.7805,
+        "rank": 17
+      },
+      {
+        "product_id": 17,
+        "clip_similarity": 0.8925,
+        "color_similarity": 0.4986,
+        "final_score": 0.7743,
+        "rank": 18
+      },
+      {
+        "product_id": 20,
+        "clip_similarity": 0.8803,
+        "color_similarity": 0.5073,
+        "final_score": 0.7684,
+        "rank": 19
+      },
+      {
+        "product_id": 16,
+        "clip_similarity": 0.8829,
+        "color_similarity": 0.4997,
+        "final_score": 0.7679,
+        "rank": 20
+      }
+    ]
+  }
+}
