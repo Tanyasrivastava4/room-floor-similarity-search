@@ -1,6 +1,5 @@
 """
 segment.py
-----------
 Floor extraction for query (room) images.
 
 Product images are already clean floor-only shots, so they need no
@@ -10,7 +9,6 @@ otherwise we'd be comparing "whole room" to "clean product photo",
 which is the wrong comparison.
 
 TWO-TIER DESIGN
-----------------
 1. PRIMARY: SegFormer, a transformer-based semantic segmentation
    model pretrained on ADE20K (a 150-class scene-parsing dataset that
    includes an explicit "floor" class, id=3). Robust to camera angle,
@@ -29,10 +27,10 @@ TWO-TIER DESIGN
 import cv2
 import numpy as np
 
-# ---------------------------------------------------------------
+
 # Tier 1: SegFormer (ADE20K) - loaded lazily so importing this module
 # doesn't require internet access if it's never actually called.
-# ---------------------------------------------------------------
+
 _segformer_processor = None
 _segformer_model = None
 _SEGFORMER_MODEL_NAME = "nvidia/segformer-b0-finetuned-ade-512-512"
@@ -74,9 +72,9 @@ def segformer_floor_mask(image_bgr: np.ndarray) -> np.ndarray:
     return floor_mask
 
 
-# ---------------------------------------------------------------
+
 # Tier 2: GrabCut fallback (classical CV, no downloads required)
-# ---------------------------------------------------------------
+
 def _largest_component_mask(mask_bin: np.ndarray) -> np.ndarray:
     num_labels, labels, stats, _ = cv2.connectedComponentsWithStats(
         mask_bin.astype(np.uint8), connectivity=8
@@ -126,9 +124,9 @@ def is_mask_plausible(mask: np.ndarray, min_fraction: float = 0.08) -> bool:
     return (mask.sum() / mask.size) >= min_fraction
 
 
-# ---------------------------------------------------------------
+
 # Main entry point
-# ---------------------------------------------------------------
+
 def get_floor_mask(image_bgr: np.ndarray) -> tuple[np.ndarray, str]:
     """Returns (raw_mask, method_used) - mask is full image size."""
     try:
